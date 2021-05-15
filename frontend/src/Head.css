@@ -1,0 +1,17 @@
+* {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li {
+    float: left;
+    margin: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+}
