@@ -8,10 +8,17 @@ ul {
 }
 
 ul li {
-    float: left;
     margin: 0.5rem;
+    float: left;
+}
+.wrapper {
+    width: 70%;
+    display: block;
+    margin: 0rem auto;
 }
 
 h1 {
-    text-align: center;
+    text-align: right;
+    display: inline-block;
+    align-items: right;
 }

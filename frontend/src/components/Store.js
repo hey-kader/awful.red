@@ -2,7 +2,7 @@ import React from 'react'
 
 function Store () {
     return (
-        <div>
+        <div className="wrapper">
             <h1>Store</h1>
         </div>
     )

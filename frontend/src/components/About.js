@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function About () {
     return (
-        <div>
+        <div className="wrapper">
             <h1>About</h1>
         </div>
     )

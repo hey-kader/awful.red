@@ -1,6 +1,6 @@
 import React from "react"
-import {useState} from "react"
-import {BrowserRouter as Router, Route, Switch, Link}  from "react-router-dom"
+import {useState, useEffect} from "react"
+import {BrowserRouter as Router, Route, Switch, Link, useHistory}  from "react-router-dom"
 
 import About from './About'
 import Store from './Store'
@@ -10,43 +10,42 @@ require('../Head.css')
 
 function Head () {
 
-    const [active, setActive] = useState('')
+    let history = useHistory()
 
     return (
-        <header>
-            <Router>
-            <nav>
-                <ul>
-                    <Link to="/">
-                        <h1>[awful.red]</h1>
-                    </Link>
-                    <Link to="/about">
-                      <li>About</li>
-                    </Link>
-                    <Link to="/store">
-                      <li>Store</li>
-                    </Link>
-                    <Link to="/blog">
-                      <li>Blog</li>
-                    </Link>
-                </ul>
-            </nav>
-
-            <div>
+            <header>
+                <Router>
+                <nav>
+                    <ul>
+                        <Link to="/">
+                            <h2 id="home">[awful.red]</h2>
+                        </Link>
+                        <Link to="/about">
+                            <li id="about">About</li>
+                        </Link>
+                        <Link to="/store">
+                            <li id="store">Store</li>
+                        </Link>
+                        <Link to="/blog">
+                            <li id="blog">Blog</li>
+                        </Link>
+                    </ul>
+                </nav>
+                <div>
                 <Switch>
                   <Route path="/about"> 
-                    <About />
+                    <About history={history} />
                   </Route>
                   <Route path="/store">
-                    <Store />
+                    <Store history={history} />
                   </Route>
                   <Route path="/blog">
-                   <Blog />
-                 </Route>
+                   <Blog history={history}  />
+                </Route>
               </Switch>
-            </div>
-          </Router>
-        </header>
+              </div>
+              </Router>
+            </header>
     )
 }
 
