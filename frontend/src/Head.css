@@ -5,15 +5,18 @@
 ul {
     list-style: none;
     display: inline-block;
-}
+    float: left;
+
 
 ul li {
     margin: 0.5rem;
     float: left;
+    display: inline-block;
 }
+
 .wrapper {
     width: 70%;
-    display: block;
+    display: inline-block;
     margin: 0rem auto;
 }
 
@@ -21,4 +24,9 @@ h1 {
     text-align: right;
     display: inline-block;
     align-items: right;
+    float: right;
+}
+
+#main-title-wrapper {
+    display: inline-block;
 }
