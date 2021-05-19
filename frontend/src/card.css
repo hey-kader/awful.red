@@ -1,0 +1,55 @@
+.inner-wrapper {
+    height: 22vh;
+    
+}
+
+.card-wrapper {
+    padding: 1rem 6rem;
+    margin: 0.2rem; 
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.1rem;
+    
+}
+
+.card-wrapper {
+
+    display: table-cell;
+    transition: background 0.2s ease; 
+
+
+}
+
+.card-wrapper {
+    display: table-cell;
+    background: #ffffff;
+    color: black;
+    transition: background 0.2s ease; 
+
+}
+
+.card-wrapper#web:hover {
+
+    background: #f1eeee;
+
+}
+
+.card-wrapper#analog:hover {
+
+    background: #f1dfff;
+
+}
+
+.card-wrapper#gallary:hover {
+
+    background: #ffed99;
+
+}
+
+.card-wrapper#gui:hover {
+
+    background: #f1f99f;
+
+}
+
