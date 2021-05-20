@@ -1,5 +1,8 @@
-.inner-wrapper {
-    height: 22vh;
+.wrapper#home {
+    margin-left: 25%;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
     
 }
 
@@ -47,17 +50,20 @@
 
 
 .card-wrapper {
-    padding: 1.2rem 2rem;
-    margin: 0.25rem; 
+    padding: 1rem 1.85rem;
+    margin: .22rem; 
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 0.3rem;
     text-align: center;
-    transition-duration: 500ms;
+    align-items: center;
+    transition-duration: 300ms;
     transition-timing-function: ease-in;
     transition-property: all;
     
 }
+
 .card-wrapper:hover#web {
     background: #dcf2c6;
 }

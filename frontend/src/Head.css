@@ -1,5 +1,6 @@
 * {
     color: black;
+    max-width: 1054px;
 }
 
 ul {
@@ -15,9 +16,8 @@ ul li {
 }
 
 .wrapper {
-    width: 70%;
-    display: inline-block;
-    margin: 0rem auto;
+    width: 77%;
+    margin: auto;
 }
 
 h1 {

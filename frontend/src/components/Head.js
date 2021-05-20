@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Switch, Link, useHistory}  from "react-r
 import About from './About'
 import Store from './Store'
 import Blog from './Blog'
+import Home from './Home'
 
 require('../Head.css')
 
@@ -13,6 +14,7 @@ function Head () {
     let history = useHistory()
 
     return (
+        <>
             <header>
                 <Router>
                 <nav>
@@ -26,26 +28,24 @@ function Head () {
                         <Link to="/store">
                             <li id="store">Store</li>
                         </Link>
-                        <Link to="/blog">
-                            <li id="blog">Blog</li>
-                        </Link>
                     </ul>
                 </nav>
                 <div>
                 <Switch>
+                  <Route exact path="/"> 
+                    <Home history={history} />
+                  </Route>
                   <Route path="/about"> 
                     <About history={history} />
                   </Route>
                   <Route path="/store">
                     <Store history={history} />
                   </Route>
-                  <Route path="/blog">
-                   <Blog history={history}  />
-                </Route>
               </Switch>
               </div>
               </Router>
             </header>
+        </>
     )
 }
 
