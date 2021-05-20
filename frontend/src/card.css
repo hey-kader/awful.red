@@ -51,11 +51,13 @@
 
 .card-wrapper {
     padding: 1rem 1.85rem;
-    margin: .22rem; 
+    margin: .21rem; 
     display: inline-grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
     grid-gap: 0.3rem;
+    border-radius: 1px;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     transition-duration: 300ms;
@@ -100,5 +102,5 @@
     background: #f8ffdb;
 }
 .card-wrapper:hover#diet {
-    background: #f8ffdb;
+    background: #e4ffdb;
 }
