@@ -101,8 +101,10 @@
     background: #e4ffdb;
 }
 
-h3 {
-    margin: 0.5rem auto;
+h3, h1, h2 {
+    margin: 1rem 2rem;
+    padding: 0.2rem;
+    float: left;
 }
 
 button {

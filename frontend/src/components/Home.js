@@ -7,14 +7,14 @@ import Web from './Web.js'
 require("../card.css");
 
 
-function Home (hist) {
+function Home (his) {
 
-    let history = useHistory(hist)
+    let history = useHistory(his)
 
-    const props = useSpring (
+    let props = useSpring (
         {
-            from: {opacity: 0}, 
-            to: {opacity: 1},
+            from: {opacity: 0,  width: '93%'}, 
+            to: {opacity: 1, width: '100%'},
             reset: true
         }
     )
@@ -28,25 +28,21 @@ function Home (hist) {
         if (sub.innerText.length) {
 
             var btn = document.createElement('button')
-            btn.value = "back"
             btn.innerHTML = "back"
 
             const back = menu.innerHTML
-            menu.innerHTML = ''
+            menu.innerText = ''
             btn.id = (selected + '-' + "wrapper")
             btn.style.borderStyle = "groove"
-            btn.style.borderRadius = "4px"
             menu.appendChild(btn)
             btn.addEventListener('click', () => {
-                history.go(hist)
+                history.go('/')
             })
 
         } 
 
             
     })
-
-
 
     return (
         
@@ -57,13 +53,14 @@ function Home (hist) {
         <br />
         <br />
         <br />
+        <br />
 
         <animated.div style={props}>
-            <h2 id="s">
-            </h2>
+            <h3 id="s">
+            </h3>
         </animated.div>
 
-        <div class="wrapper" id="menu">
+        <animated.div style={props} class="wrapper" id="menu">
             <div id="web" onClick={() => setSelected('web')} className="card-wrapper">
                 <h2>web</h2>
             </div>
@@ -98,7 +95,7 @@ function Home (hist) {
                 <h2>ai</h2>
             </div>
 
-        </div>
+        </animated.div>
         </div>
     )
 }
