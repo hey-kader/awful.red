@@ -23,11 +23,12 @@ ul li {
 
 h1 {
     text-align: right;
-    display: inline-block;
     align-items: right;
     float: right;
 }
-
-#main-title-wrapper {
-    display: inline-block;
+p {
+    position: fixed;
+    margin: auto;
+    width: 66%;
+    top: 100px;
 }
