@@ -2,7 +2,6 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import {useHistory} from 'react-router-dom';
 import {useTransition, useSpring, animated} from 'react-spring'
-import Web from './Web.js'
 
 require("../card.css");
 

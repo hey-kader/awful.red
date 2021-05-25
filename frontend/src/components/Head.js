@@ -2,9 +2,6 @@ import React from "react"
 import {useState, useEffect} from "react"
 import {BrowserRouter as Router, Route, Switch, Link, useHistory}  from "react-router-dom"
 
-import About from './About'
-import Store from './Store'
-import Blog from './Blog'
 import Home from './Home'
 
 require('../Head.css')
