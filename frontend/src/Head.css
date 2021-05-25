@@ -11,14 +11,22 @@ ul {
 
 }
 ul li {
-    margin: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem;
     float: left;
-    display: inline-block;
 }
 
 .wrapper {
+    height: 50px;
     width: 77%;
     margin: auto;
+    padding: 0.2rem;
+}
+
+#s {
+    width: 25%;
+    font-size: 100%;
+    margin: 0.3rem;
 }
 
 h1 {
@@ -26,9 +34,4 @@ h1 {
     align-items: right;
     float: right;
 }
-p {
-    position: fixed;
-    margin: auto;
-    width: 66%;
-    top: 100px;
-}
+

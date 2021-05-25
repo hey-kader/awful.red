@@ -22,18 +22,12 @@ function Head () {
                         <Link to="/">
                             <h2 id="home">Kader Arnold</h2>
                         </Link>
-                        <Link to="/about">
-                            <li id="about">About</li>
-                        </Link>
                     </ul>
                 </nav>
                 <div>
                 <Switch>
                   <Route exact path="/"> 
                     <Home history={history} />
-                  </Route>
-                  <Route path="/about"> 
-                    <About history={history} />
                   </Route>
               </Switch>
               </div>

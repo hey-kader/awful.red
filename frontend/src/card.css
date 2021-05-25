@@ -1,8 +1,6 @@
-
 .wrapper#home {
     margin-left: 25%;
     text-align: start;
-    justify-content: space-around;
     align-items: start;
     margin-right: auto;
     align-content: center;
@@ -15,7 +13,7 @@
     background: #e3ead9;
 }
 
-.card-wrapper#analog {
+.card-wrapper#about {
     background: #f1dfff;
 }
 
@@ -91,7 +89,7 @@
     background: #cfb6f2;
 }
 
-.card-wrapper:hover#analog {
+.card-wrapper:hover#about {
     background: #fce5e1;
 }
 .card-wrapper:hover#industries {
@@ -108,4 +106,11 @@
 }
 .card-wrapper:hover#c {
     background: #e4ffdb;
+}
+
+h3 {
+    align-items: left;
+    justify-content: left;
+    display: block;
+    marginLeft: 1rem;
 }
