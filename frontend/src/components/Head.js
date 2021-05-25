@@ -20,13 +20,10 @@ function Head () {
                 <nav>
                     <ul>
                         <Link to="/">
-                            <h2 id="home">[awful.red]</h2>
+                            <h2 id="home">Kader Arnold</h2>
                         </Link>
                         <Link to="/about">
                             <li id="about">About</li>
-                        </Link>
-                        <Link to="/store">
-                            <li id="store">Store</li>
                         </Link>
                     </ul>
                 </nav>
@@ -37,9 +34,6 @@ function Head () {
                   </Route>
                   <Route path="/about"> 
                     <About history={history} />
-                  </Route>
-                  <Route path="/store">
-                    <Store history={history} />
                   </Route>
               </Switch>
               </div>

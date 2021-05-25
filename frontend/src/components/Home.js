@@ -1,10 +1,16 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {useState, useEffect} from 'react'
+import {useSpring, animated} from 'react-spring'
 
 require("../card.css");
 
+
 function Home () {
+
+    let [selected, setSelected] = useState('')
+
     return (
+        
         <div className="wrapper" id="home">
             <br />
             <br />
@@ -15,44 +21,38 @@ function Home () {
             <br />
             <br />
 
-            <div id="web" className="card-wrapper">
+            <div id="web" onClick={() => setSelected('web')} className="card-wrapper">
                 <h2>web</h2>
             </div>
-            <div id="gui" className="card-wrapper">
+            <div id="gui" onClick={() => setSelected('gui')} className="card-wrapper">
                 <h2>gui</h2>
             </div>
-            
-            <div id="analog" className="card-wrapper">
+            <div id="analog" onClick={() => setSelected('analog')} className="card-wrapper">
                 <h2>analog</h2>
             </div>
-            <div id="gallary" className="card-wrapper">
+            <div id="gallary" onClick={() => setSelected('gallary')} className="card-wrapper">
                 <h2>gallary</h2>
             </div>
-
-            <div id="marketing" className="card-wrapper">
+            <div id="market" onClick={() => setSelected('market')} className="card-wrapper">
                 <h2>market</h2>
             </div>
-            <div id="industry" className="card-wrapper">
+            <div id="industries" onClick={() => setSelected('industries')} className="card-wrapper">
                 <h2>industries</h2>
             </div>
-            <div id="robots" className="card-wrapper">
+            <div id="robotics" onClick={() => setSelected('robotics')} className="card-wrapper">
                 <h2>robotics</h2>
             </div>
-
-
-
-            <div id="crypto" className="card-wrapper">
+            <div id="crypto" onClick={() => setSelected('crypto')} className="card-wrapper">
                 <h2>crypto</h2>
             </div>
-            <div id="cuisine" className="card-wrapper">
-                <h2>cuisine</h2>
+            <div id="finance" onClick={() => setSelected('finance')} className="card-wrapper">
+                <h2>finance</h2>
             </div>
-            <div id="diet" className="card-wrapper">
-                <h2>diet</h2>
+            <div id="c" onClick={() => setSelected('diet')} className="card-wrapper">
+                <h2>c</h2>
             </div>
-            
-            <div id="more" className="card-wrapper">
-                <h2>more</h2>
+            <div id="ai" onClick={() => setSelected('ai')} className="card-wrapper">
+                <h2>ai</h2>
             </div>
         </div>
     )

@@ -1,7 +1,12 @@
+
 .wrapper#home {
     margin-left: 25%;
+    text-align: start;
+    justify-content: space-around;
+    align-items: start;
     margin-right: auto;
     align-content: center;
+    position: static;
     text-align: center;
     
 }
@@ -22,29 +27,29 @@
     background: #f1f99f;
 }
 
-.card-wrapper#marketing {
+.card-wrapper#market {
     background: #ffc3b3;
 }
 
-.card-wrapper#robots {
+.card-wrapper#robotics {
     background: #afaffd;
 }
 .card-wrapper#crypto {
     background: #b6f2c6;
 }
-.card-wrapper#more {
+.card-wrapper#ai {
     background: #ccffff;
 }
 
-.card-wrapper#diet {
+.card-wrapper#c {
     background: #aaedff;
 }
 
-.card-wrapper#industry {
+.card-wrapper#industries {
     background: #efeeff;
 }
 
-.card-wrapper#cuisine {
+.card-wrapper#finance {
      background: #ffed99;
 }
 
@@ -58,8 +63,8 @@
     grid-gap: 0.3rem;
     border-radius: 1px;
     justify-content: space-around;
-    text-align: center;
-    align-items: center;
+    text-align: start;
+    align-items: start;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     transition-property: all;
@@ -74,7 +79,7 @@
     background: #f6f2c6;
 }
 
-.card-wrapper:hover#marketing {
+.card-wrapper:hover#market {
     background: #e9ccff;
 }
 
@@ -82,25 +87,25 @@
     background: #adffaf;
 }
 
-.card-wrapper:hover#robots {
+.card-wrapper:hover#robotics {
     background: #cfb6f2;
 }
 
 .card-wrapper:hover#analog {
     background: #fce5e1;
 }
-.card-wrapper:hover#industry {
+.card-wrapper:hover#industries {
     background: #baffe8;
 }
 .card-wrapper:hover#gallary {
     background: #ffdfdb;
 }
-.card-wrapper:hover#more {
+.card-wrapper:hover#ai {
     background: #f8ffdb;
 }
-.card-wrapper:hover#cuisine {
+.card-wrapper:hover#finance {
     background: #f8ffdb;
 }
-.card-wrapper:hover#diet {
+.card-wrapper:hover#c {
     background: #e4ffdb;
 }
