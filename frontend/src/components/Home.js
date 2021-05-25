@@ -23,9 +23,9 @@ function Home (hist) {
 
     useEffect (() => {
         let sub = document.getElementById('s')
-        sub.innerText = selected
+        sub.innerHTML = selected
         var menu = document.getElementById('menu')
-        if (sub.innerText.length > 0) {
+        if (sub.innerText.length) {
 
             var btn = document.createElement('button')
             btn.value = "back"
@@ -34,6 +34,8 @@ function Home (hist) {
             const back = menu.innerHTML
             menu.innerHTML = ''
             btn.id = (selected + '-' + "wrapper")
+            btn.style.borderStyle = "groove"
+            btn.style.borderRadius = "4px"
             menu.appendChild(btn)
             btn.addEventListener('click', () => {
                 history.go(hist)
@@ -71,8 +73,8 @@ function Home (hist) {
             <div id="about" onClick={() => setSelected('about')} className="card-wrapper">
                 <h2>about</h2>
             </div>
-            <div id="gallary" onClick={() => setSelected('gallary')} className="card-wrapper">
-                <h2>gallary</h2>
+            <div id="gallery" onClick={() => setSelected('gallery')} className="card-wrapper">
+                <h2>gallery</h2>
             </div>
             <div id="market" onClick={() => setSelected('market')} className="card-wrapper">
                 <h2>market</h2>

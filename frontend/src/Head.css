@@ -11,27 +11,30 @@ ul {
 
 }
 ul li {
-    padding: 2rem;
-    margin: 0.5rem;
-    float: left;
+    padding: auto;
+    margin: auto;
 }
 
 .wrapper {
-    height: 200px;
-    width: 87%;
-    margin: auto;
-    padding: 0.2rem;
+    width: 95%;
+    padding: 0.15rem;
+    margin:  auto;
 }
 
-#s {
-    width: 25%;
-    font-size: 100%;
-    margin: 0.3rem;
+
+ h2 {
+     display: inline-block;
+     margin: 1rem auto;
+     padding: 0.56rem;
+    float: left;
+    
 }
 
-h1 {
-    text-align: right;
-    align-items: right;
+
+button {
+    margin: 0.8rem auto;
+    border-radius: 5%;
+    padding: 0.5rem;
     float: right;
 }
 
