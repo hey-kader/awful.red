@@ -11,14 +11,14 @@ ul {
 
 }
 ul li {
-    padding: 1rem;
-    margin: 1.5rem;
+    padding: 2rem;
+    margin: 0.5rem;
     float: left;
 }
 
 .wrapper {
-    height: 50px;
-    width: 77%;
+    height: 200px;
+    width: 87%;
     margin: auto;
     padding: 0.2rem;
 }

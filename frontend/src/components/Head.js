@@ -9,9 +9,9 @@ import Home from './Home'
 
 require('../Head.css')
 
-function Head () {
+function Head (props) {
 
-    let history = useHistory()
+    let history = useHistory(props.history)
 
     return (
         <>
@@ -20,14 +20,14 @@ function Head () {
                 <nav>
                     <ul>
                         <Link to="/">
-                            <h2 id="home">Kader Arnold</h2>
+                            <h2 id="home-tag">Kader Arnold</h2>
                         </Link>
                     </ul>
                 </nav>
                 <div>
                 <Switch>
                   <Route exact path="/"> 
-                    <Home history={history} />
+                    <Home history={props.history} />
                   </Route>
               </Switch>
               </div>

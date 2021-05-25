@@ -1,11 +1,15 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
+import {useHistory} from 'react-router-dom';
 import {useTransition, useSpring, animated} from 'react-spring'
+import Web from './Web.js'
 
 require("../card.css");
 
 
-function Home () {
+function Home (hist) {
+
+    let history = useHistory(hist)
 
     const props = useSpring (
         {
@@ -16,14 +20,35 @@ function Home () {
     )
 
     let [selected, setSelected] = useState('')
+
     useEffect (() => {
         let sub = document.getElementById('s')
         sub.innerText = selected
+        var menu = document.getElementById('menu')
+        if (sub.innerText.length > 0) {
+
+            var btn = document.createElement('button')
+            btn.value = "back"
+            btn.innerHTML = "back"
+
+            const back = menu.innerHTML
+            menu.innerHTML = ''
+            btn.id = (selected + '-' + "wrapper")
+            menu.appendChild(btn)
+            btn.addEventListener('click', () => {
+                history.go(hist)
+            })
+
+        } 
+
+            
     })
+
+
 
     return (
         
-        <>
+        <div class="wrapper">
 
         <br />
         <br />
@@ -31,12 +56,12 @@ function Home () {
         <br />
         <br />
 
-        <animated.div className="wrapper" style={props}>
+        <animated.div style={props}>
             <h2 id="s">
             </h2>
         </animated.div>
 
-        <div className="wrapper" id="home">
+        <div class="wrapper" id="menu">
             <div id="web" onClick={() => setSelected('web')} className="card-wrapper">
                 <h2>web</h2>
             </div>
@@ -70,8 +95,9 @@ function Home () {
             <div id="ai" onClick={() => setSelected('ai')} className="card-wrapper">
                 <h2>ai</h2>
             </div>
+
         </div>
-        </>
+        </div>
     )
 }
 
